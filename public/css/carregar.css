@@ -1,0 +1,18 @@
+.progress, .alert {
+    margin: 15px;
+}
+
+.alert {
+    display: none;
+} .cont {
+    margin-top: 130px;
+    width: 400px;
+}
+body {
+  /* Base64 encoded transparent gif */
+    background: url(/img/gallery/980x380/FANOR.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50% 100%;
+}
