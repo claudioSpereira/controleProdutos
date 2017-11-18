@@ -19,12 +19,12 @@
  <!-- Nome Form Input -->
  <div class="form-group">
  {!! Form::label('type_id','Produto', ['class'=>'col-xs-1']) !!}
- {!! Form::select('type_id', $produtos, null ,array('class'=>'form-control btn-info')) !!}
+ {!! Form::select('type_id', $types, null ,array('class'=>'form-control btn-info','placeholder'=>'--select product--')) !!}
  </div>
 
  <div class="form-group">
  {!! Form::label('fun_id','Funcionario', ['class'=>'col-xs-1']) !!}
- {!! Form::select('fun_id', $funcionarios, null ,array('class'=>'form-control btn-info')) !!}
+ {!! Form::select('fun_id', $funcionarios, null ,array('class'=>'form-control btn-info','placeholder'=>'--select funcionario--')) !!}
  </div>
 
  <div class="form-group">

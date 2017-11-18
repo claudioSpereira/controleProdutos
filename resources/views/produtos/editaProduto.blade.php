@@ -15,7 +15,7 @@
      <div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span><em> {!! session('altera') !!}</em></div>
  @endif
 
- 
+
 
  <h2>ATENÇÃO, VERIFIQUE TODOS OS CAMPOS ANTES DE SALVAR!</h2>
  {!! Form::open(['url'=>"/$produtos->id/updateproduto",'method'=>'put', 'files'=>'true','id'=>'delForm']) !!}
@@ -23,12 +23,12 @@
 
  <div class="form-group">
  {!! Form::label('type_id','Produto:', ['class'=>'col-xs-1']) !!}
- {!! Form::select('type_id', $types, null, array('class'=>'form-control btn-info')) !!}
+ {!! Form::select('type_id', $types, $produtos->type_id, array('class'=>'form-control btn-info')) !!}
  </div>
 
  <div class="form-group">
  {!! Form::label('fun_id','Funcionario', ['class'=>'col-xs-1']) !!}
- {!! Form::select('fun_id', $funcionarios, null ,array('class'=>'form-control btn-info')) !!}
+ {!! Form::select('fun_id', $funcionarios, $produtos->fun_id ,array('class'=>'form-control btn-info')) !!}
  </div>
 
  <div class="form-group">

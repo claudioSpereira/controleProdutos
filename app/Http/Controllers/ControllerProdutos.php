@@ -86,8 +86,8 @@ class ControllerProdutos extends Controller
     public function criaproduto()
     {
       $funcionarios =  Funcionario::all()->pluck('fun_nome','id');
-      $produtos =  Typeprod::all()->pluck('type_nome','id');
-      return view('produtos.criaProduto', ['produtos'=>$produtos, 'funcionarios'=>$funcionarios]);
+      $types =  Typeprod::all()->pluck('type_nome','id');
+      return view('produtos.criaProduto', ['types'=>$types, 'funcionarios'=>$funcionarios]);
     }
     public function salvaproduto(ProdutoRequest $post)
     {
@@ -113,7 +113,6 @@ class ControllerProdutos extends Controller
    }
    public function editaproduto($id)
    {
-
     $types = Typeprod::all()->pluck('type_nome','id')->toArray();
     $funcionarios =  Funcionario::all()->pluck('fun_nome','id')->toArray();
     $produtos = Produto::findOrFail($id);
